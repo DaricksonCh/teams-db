@@ -1,0 +1,39 @@
+.moder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+}
+.main-box{
+    padding: 30px;
+    width: 500px;
+    border: 0.5px solid;
+    display: grid;
+    gap: 10px;
+    grid-template:"title title title" 40px
+                  "emptyl texto emptyr" 70px
+                  "emptyl correo emptyr"
+                  "emptyl send emptyr"   /
+                   10%    1fr  10%;
+
+}
+.title{
+    text-align: center;
+    font-size: 4vh;
+    grid-area: title;
+    border-bottom: 1px solid;
+}
+.texto{
+    font-size: 3vh;
+    grid-area: texto;
+}
+.correo{
+    grid-area: correo;
+    width: 100%;
+    height: 30px;
+}
+.send{
+    grid-area: send;
+    background-color: gold;
+    font-size: 7vh;
+}
